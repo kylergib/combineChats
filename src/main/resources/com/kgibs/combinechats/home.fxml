@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<VBox fx:id="mainVBox" prefHeight="1000.0" prefWidth="400.0" styleClass="main" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kgibs.combinechats.controller.HomeController">
+   <children>
+      <VBox fx:id="webviewVBox" alignment="CENTER" spacing="20.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <children>
+            <MenuBar prefHeight="28.0" prefWidth="164.0" styleClass="custom">
+              <menus>
+                <Menu mnemonicParsing="false" styleClass="custom" text="File">
+                  <items>
+                        <MenuItem fx:id="reportMenuItem" mnemonicParsing="false" onAction="#reportMenuClicked" text="Reports" />
+                        <MenuItem fx:id="settingMenuItem" mnemonicParsing="false" onAction="#settingMenuItemClicked" styleClass="custom" text="Settings" />
+                    <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeMenuItemClicked" styleClass="custom" text="Close" />
+                  </items>
+                </Menu>
+                <Menu fx:id="twitchMenu" mnemonicParsing="false" styleClass="menu-item" text="Twitch">
+                  <items>
+                    <MenuItem fx:id="addTwitchMenuItem" mnemonicParsing="false" onAction="#addTwitchMenuItemClicked" text="Add" />
+                  </items>
+                </Menu>
+                <Menu fx:id="kickMenu" mnemonicParsing="false" styleClass="menu-item" text="Kick">
+                     <items>
+                        <MenuItem fx:id="addKickMenuItem" mnemonicParsing="false" onAction="#addKickMenuItemCicked" text="Add" />
+                     </items>
+                </Menu>
+                  <Menu fx:id="youtubeMenu" mnemonicParsing="false" styleClass="menu-item" text="YouTube">
+                     <items>
+                    <MenuItem fx:id="addYoutubeMenuItem" mnemonicParsing="false" onAction="#addYoutubeMenuItemClicked" text="Add" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <WebView fx:id="chatWebView" prefHeight="1017.0" prefWidth="360.0" VBox.vgrow="ALWAYS" />
+            <CheckBox fx:id="scrollCheckbox" mnemonicParsing="false" selected="true" styleClass="custom-checkbox" text="Auto scroll to bottom" />
+            <Label fx:id="statusLabel" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

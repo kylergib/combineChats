@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="%highlight{${LOG_LEVEL_PATTERN:-%5p}}{FATAL=red blink bg_#2B2B2B, ERROR=red bg_#2B2B2B bg_#2B2B2B, WARN=yellow bold bg_#2B2B2B, INFO=green bg_#2B2B2B, DEBUG=green bold bg_#2B2B2B, TRACE=blue bg_#2B2B2B} [%-10.10t] %style{%-15.15C{1.}.%-15.15M}{magenta} : %highlight{%m}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=green, DEBUG=green bold, TRACE=blue} %n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.kgibs.combinechats.controller" level="INFO"/>
+        <Logger name="com.kgibs.combinechats.utility" level="TRACE"/>
+        <Logger name="com.kgibs.combinechats.model" level="INFO"/>
+        <Logger name="com.kgibs.combinechats.service" level="INFO"/>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

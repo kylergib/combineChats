@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="425.0" style="-fx-alignment: center;" styleClass="main" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kgibs.combinechats.controller.SettingsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="242.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="185.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="45.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="45.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="45.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="45.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="45.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="45.0" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center;" GridPane.rowIndex="2">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="233.0" style="-fx-alignment: center;" text="Kick Messages Color" textAlignment="CENTER" />
+         </children>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </HBox>
+      <HBox prefHeight="29.0" prefWidth="234.0" style="-fx-alignment: center;" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+         <children>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="235.0" style="-fx-alignment: center;" text="Youtube Messages Color" textAlignment="CENTER" />
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="172.0" style="-fx-alignment: center;">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="234.0" style="-fx-alignment: center;" text="Twtich Messages Color" textAlignment="CENTER" />
+         </children>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center-left;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="25.0" />
+         </GridPane.margin>
+         <children>
+            <ColorPicker fx:id="youtubeColorPicker">
+               <value>
+                  <Color red="1.0" />
+               </value>
+            </ColorPicker>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center-left;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="25.0" />
+         </GridPane.margin>
+         <children>
+            <ColorPicker fx:id="kickColorPicker">
+               <value>
+                  <Color green="0.501960813999176" />
+               </value>
+            </ColorPicker>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="25.0" style="-fx-alignment: center-right;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonClicked" text="Cancel" />
+            <Button fx:id="saveButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#saveButtonClicked" style="-fx-alignment: center-right;" text="Save" textAlignment="RIGHT" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets right="25.0" />
+         </GridPane.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center-left;" GridPane.rowIndex="4">
+         <children>
+            <CheckBox fx:id="showChannelNameCheckBox" alignment="CENTER" mnemonicParsing="false" prefHeight="18.0" selected="true" styleClass="custom-checkbox" text="Show Channel Names in messages" textAlignment="CENTER" />
+         </children>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center-left;" GridPane.rowIndex="3">
+         <children>
+            <CheckBox fx:id="showPlatformCheckbox" alignment="CENTER" mnemonicParsing="false" prefHeight="18.0" selected="true" styleClass="custom-checkbox" text="Show Platform in messages" textAlignment="CENTER" />
+         </children>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center-left;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+            <ColorPicker fx:id="twitchColorPicker" promptText="ddsdfh">
+               <value>
+                  <Color red="0.501960813999176" blue="0.501960813999176" />
+               </value>
+            </ColorPicker>
+         </children>
+      </HBox>
+      <HBox layoutX="25.0" layoutY="129.0" prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center-left;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <CheckBox fx:id="darkModeCheckBox" alignment="CENTER" mnemonicParsing="false" prefHeight="18.0" styleClass="custom-checkbox" text="Dark Mode" textAlignment="CENTER" />
+         </children>
+      </HBox>
+      <Label fx:id="statusLabel" prefHeight="40.0" prefWidth="236.0" GridPane.rowIndex="5">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
