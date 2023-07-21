@@ -14,7 +14,7 @@ Installation for development
 1)	Unzip the file provided for the source code.
 2)	Open IntelliJ IDEA and open the root folder of the source code.
 3)	Once loaded, reload or load the Gradle project. This will download all dependencies outlined in the “build.gradle” file.
-4)	Create a configuration to start the application. Ensure that the liberica-17 JDK is selected and set the main class to be the CombineChats class. Below is a screenshot depicting what the settings should look like.
+4)	Create a configuration to start the application. Ensure that the liberica-17 JDK is selected and set the main class to be the CombineChats class. Below is a screenshot depicting what the settings should look like.  
  <img width="468" alt="image" src="https://github.com/kylergib/combineChats/assets/48994502/d6684143-b63c-4c78-a1b3-cf24a2d5e4ec">
 5)	Now you should be able to run the application from IntelliJ by starting the configuration you just created.
 
