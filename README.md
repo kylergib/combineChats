@@ -18,7 +18,7 @@
 5)	Now you should be able to run the application from IntelliJ by starting the configuration you just created.
 
 ### Guide for user.  
-###### The remainder of the User Guide will provide a walkthrough of how to use the application, offering a brief description of every window in the application.
+#### The remainder of the User Guide will provide a walkthrough of how to use the application, offering a brief description of every window in the application.
 -   Once the application is launched, it will open to the following screen:  
 <img width="197" alt="image" src="https://github.com/kylergib/combineChats/assets/48994502/6b0af7c6-756e-4540-aa98-0453709a3f39">
 
