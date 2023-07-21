@@ -1,5 +1,12 @@
 # CombineChats User Guide
 
+
+### This is a Java application that lets you connect to multiple chats from Twitch, Kick and YouTube. At this time you can connect to an unlimited chats from Twitch and Kick, but only one from YouTube.
+### Future Development
+-  I want to add multiple chats for YouTube.
+-  Add ability to log into each platform to be able to send messages to those platform.
+-  Change how you connect to Kick without using the button.
+
 ### Set Up in IntelliJ
 -   The following steps will work on Windows 10+ and MacOS 12+.
 #### Prerequisites
