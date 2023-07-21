@@ -1,16 +1,15 @@
 # CombineChats User Guide
 
-### Set Up in IntelliJ  
-Set up and run application in IntelliJ IDEA
-	The following steps will work on Windows 10+ and MacOS 12+.
-Prerequisites
+### Set Up in IntelliJ
+-   The following steps will work on Windows 10+ and MacOS 12+.
+#### Prerequisites
 -	IntelliJ IDEA
 -	MacOS 12+ or Windows 10+
 -	Download and install Liberica Java JDK 17.0.7
-o	Install Guide: https://bell-sw.com/pages/liberica_install_guide-17.0.7/
-o	Liberica JDK was used because it includes JavaFX, which simplifies the process of building the application. The base Java JDK no longer includes JavaFX.
+-	Install Guide: https://bell-sw.com/pages/liberica_install_guide-17.0.7/
+-	Liberica JDK was used because it includes JavaFX, which simplifies the process of building the application. The base Java JDK no longer includes JavaFX.
 -	An internet connection
-Installation for development
+#### Installation for development
 1)	Unzip the file provided for the source code.
 2)	Open IntelliJ IDEA and open the root folder of the source code.
 3)	Once loaded, reload or load the Gradle project. This will download all dependencies outlined in the “build.gradle” file.
@@ -19,8 +18,8 @@ Installation for development
 5)	Now you should be able to run the application from IntelliJ by starting the configuration you just created.
 
 ### Guide for user.  
-	The remainder of the User Guide will provide a walkthrough of how to use the application, offering a brief description of every window in the application.
-Once the application is launched, it will open to the following screen:  
+###### The remainder of the User Guide will provide a walkthrough of how to use the application, offering a brief description of every window in the application.
+-   Once the application is launched, it will open to the following screen:  
 <img width="197" alt="image" src="https://github.com/kylergib/combineChats/assets/48994502/6b0af7c6-756e-4540-aa98-0453709a3f39">
 
 #### Add a Twitch Channel:
@@ -29,7 +28,7 @@ Once the application is launched, it will open to the following screen:
 
 -	A new window will pop up asking for the Twitch channel name. 
 -	Enter the name, and if desired, you can select the auto-connect checkbox. 
-	If selected, the application will attempt to connect to the channel both upon start-up and when you add the channel.  
+-	If selected, the application will attempt to connect to the channel both upon start-up and when you add the channel.  
 <img width="167" alt="image" src="https://github.com/kylergib/combineChats/assets/48994502/e1bdeb2f-d12c-4602-aef8-a579ddb4527c">
 -	Click 'Add', and the application will attempt to add the channel.
 -	Once added, the channel will appear below the Twitch menu item.    
